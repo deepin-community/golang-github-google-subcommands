@@ -1,5 +1,53 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-google-subcommands (1.2.0-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Update standards version to 4.6.0, no changes needed.
+  * Apply multi-arch hints. + golang-github-google-subcommands-dev: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 24 Nov 2022 00:06:51 +0000
+
+golang-github-google-subcommands (1.2.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+  [ Félix Sipma ]
+  * Merge branch 'lintian-fixes' into 'master'
+    Fix some issues reported by lintian
+    See merge request go-team/packages/golang-github-google-subcommands!1
+
+  [ Anthony Fok ]
+  * New upstream version 1.2.0
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Add debian/watch to track release tarballs
+  * Process debian/control with "cme fix dpkg"
+    which also bumps the Standards-Version to 4.5.0
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Add myself to the list of Uploaders
+  * Remove unnecessary binary dependency on dpkg-dev
+
+ -- Anthony Fok <foka@debian.org>  Mon, 24 Feb 2020 16:53:15 -0700
+
+golang-github-google-subcommands (0.0~git20170830.ce3d4cfc-3) unstable; urgency=medium
+
+  * Fix install error of README.rst. (Closes: #903134)
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Mon, 09 Jul 2018 08:51:50 +0900
+
+golang-github-google-subcommands (0.0~git20170830.ce3d4cfc-2) unstable; urgency=medium
+
+  * Remove deabin/watch.
+  * Change Priority to optional.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 12 Dec 2017 10:56:32 +0900
+
+golang-github-google-subcommands (0.0~git20170830.ce3d4cfc-1) unstable; urgency=medium
+
+  * Initial release (Closes: #878712)
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Mon, 16 Oct 2017 12:43:45 +0900
